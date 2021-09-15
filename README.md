@@ -1,0 +1,1 @@
+These are HackerRank coding challenges that I am working through to show my progress.
