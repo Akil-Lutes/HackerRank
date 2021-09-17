@@ -14,11 +14,24 @@ function bigSorting(unsorted) {
     // sort array from smallest to largest of numbers
     // first input is the number of integers in the array, 
     // I think I am going to have to tie the first index/first input to a variable and do such operation.
+    // 
     let bigSortCopy = [...unsorted];
+    let n = bigSortCopy[0];
     let bigSorted = bigSortCopy.sort((a, b) => {
+        // if a.length != b.length 
+        // return a.length - b.length (for bigIntegers)
         return a - b;
     })
     return bigSorted;
 }
 
 console.log(bigSorting(numberSort));
+
+/* var sorted = unsorted.sort(function(a, b) {
+    if(a.length == b.length){
+        return a > b ? 1 : -1;
+    }
+    return a.length - b.length;        
+});
+console.log(sorted.join('\n'))
+} */
